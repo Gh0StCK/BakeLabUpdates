@@ -5,9 +5,9 @@ Tell me thanks.
 This files update the BakeLab2 add-on.
 
 Updated: 
-  1. Fixed "Transmission problem" (error which led to getting stuck);
+  1. Fixed "Transmission problem" (error was leding to getting stuck);
   2. Other minor fixes.
 
-Replace the relevant files in the add-on's folder than install the add-on
+Replace the relevant files in the add-on's folder than install the add-on.
 
 Version Blender 3.6.4

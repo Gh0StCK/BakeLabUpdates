@@ -6,7 +6,8 @@ This files update the BakeLab2 add-on.
 
 Updated: 
   1. Fixed "Transmission problem" (error was leding to getting stuck);
-  2. Other minor fixes.
+  2. Deleted not useable "Subsurface";
+  3. Other minor fixes.
 
 Replace the relevant files in the add-on's folder than install the add-on.
 

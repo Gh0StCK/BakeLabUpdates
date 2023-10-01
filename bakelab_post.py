@@ -55,7 +55,7 @@ class BakeLab_GenerateMaterials(Operator):
                 continue
             self.baked_types.append(bake_map.type)
             
-            if bake_map.type == 'Albedo':
+            if bake_map.type in ['Albedo', 'Diffuse']:
                 imgNode = nodes.new(type = 'ShaderNodeTexImage')
                 imgNode.hide = True
                 imgNode.location = -1000,-100
@@ -68,6 +68,9 @@ class BakeLab_GenerateMaterials(Operator):
                 imgNode.hide = True
                 imgNode.location = -1000, 300
                 imgNode.image = bake_image
+                imgNode.image.source = 'FILE'  #SingleImage
+                imgNode.image.alpha_mode = 'PREMUL' #Premultiplied
+                imgNode.image.colorspace_settings.name = 'Linear' #Color space 'Linear'
                 EmitNode = nodes.new(type = 'ShaderNodeEmission')
                 EmitNode.location = -400, 300
                 EmitNode.width = pbr.width
